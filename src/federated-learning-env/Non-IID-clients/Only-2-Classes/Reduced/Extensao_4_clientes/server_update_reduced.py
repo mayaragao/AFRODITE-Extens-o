@@ -19,7 +19,7 @@ from flwr.common import (
 )
 #from flwr import ClientProxy, EvaluateRes, FitRes
 serverPort = '8080'
-numRounds = 400
+numRounds = 100
 
 if len(argv) >= 2:
     serverPort = argv[1]
