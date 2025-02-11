@@ -44,7 +44,7 @@ y_test2 = y_test2[750:]
 X = np.concatenate((x_train1,x_train2,x_test1,x_test2))
 Y = np.concatenate((y_train1,y_train2,y_test1,y_test2))
 
-sss = StratifiedShuffleSplit(n_splits=2, test_size=0.35, random_state=47527)
+sss = StratifiedShuffleSplit(n_splits=2, test_size=0.65, random_state=47527)
 train_index, test_index = next(sss.split(X, Y))
 
 x_train = X[train_index]
